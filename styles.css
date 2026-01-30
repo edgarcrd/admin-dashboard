@@ -87,6 +87,7 @@ body {
   grid-column: 2 / 2;
 }
 
+/* This will go away */
 .btm-left {
   width: 400px;
   height: auto;
