@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid red;
+  font-family: 'Roboto';
+  /* outline: 2px solid red; */
 }
 
 ul {
@@ -20,7 +23,12 @@ body {
   height: 900px;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr 5fr;
+  text-align: center;
 }
+
+/* .container div{
+  padding: 15px;
+} */
 
 .sidebar {
   background-color: rgb(44, 105, 236);
@@ -42,24 +50,31 @@ body {
 
 .sidebar {
   display: grid;
-  grid-template-columns: auto;
+  /* grid-template-columns: auto; */
   grid-template-rows: 60px 240px 120px;
   gap: 25px;
 }
 
+.dashboard {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+}
+
 .links-top {
   display: grid;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 40px);
 }
 
 .links-btm {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 40px);
 }
 
 .link {
   display: grid;
-  grid-template-columns: 40px auto;
+  grid-template-columns: 60px auto;
+  align-items: center;
 }
 
 .top, .btm {
@@ -107,30 +122,61 @@ body {
   grid-row: 1 / 3;
 }
 
-/* .announcements, .trending{
-  grid-column: 2 / 2;
-  display: flex;
-  flex-direction: column;
-} */
-
 .title {
   width: auto;
   height: 40px;
 }
 
-/* .a-list, .trend-list{
-  flex: 1;
-  justify-content:space-around;
-  display: flex;
-  flex-direction: column;
-} */
-
 .a-container {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   height: 335px;
+  padding: 15px;
 }
 
+.trends {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 335px;
+  padding: 15px;
+}
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
 
+.cards .card {
+  height: 217px;
+}
 
+.cards {
+  padding: 15px;
+}
+
+.dashboard svg{
+  width: 65%;
+  height: 65%;
+  fill: white;
+  margin-left: 15px;
+}
+
+.link svg {
+  width: 45%;
+  height: 45%;
+  fill: white;
+  margin-left: 20px;
+}
+
+.link-title {
+  color: white;
+  text-align: start;
+}
+
+.dash-title {
+  color: white;
+  text-align: start;
+  align-content: center;
+  font-weight: 600;
+}
