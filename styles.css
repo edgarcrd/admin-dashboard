@@ -93,9 +93,8 @@ body {
   grid-template-rows: 2fr 4fr;
 }
 
-.logo {
+.btm-left img {
   grid-row: 1 / 3;
-  background-color: black;
 }
 
 .hi {
@@ -106,11 +105,6 @@ body {
   grid-column: 2 / 2;
 }
 
-/* This will go away */
-.btm-left {
-  width: 400px;
-  height: auto;
-}
 
 .main-content {
   display: grid;
@@ -179,4 +173,34 @@ body {
   text-align: start;
   align-content: center;
   font-weight: 600;
+}
+
+.top-left svg {
+  height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+input[type="search"] {
+  width: 400px;
+}
+
+.top-left, .btm-left {
+  padding-left: 15px;
+}
+
+.top-right svg {
+  height: 20px;
+}
+
+.top-right img {
+  width: 50px;
+}
+
+.top-right {
+  gap: 20px;
+}
+
+.btm-left img {
+  width: 90px;
 }
